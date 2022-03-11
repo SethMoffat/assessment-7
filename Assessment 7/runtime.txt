@@ -1,0 +1,7 @@
+
+doublerInsert is exponentially faster than doublerAppend. As the input size gets larger, the runtime gets exponentially slower (for doublerAppend).
+
+
+while push() appends an element to the end of the array, unshift() appends it to the beginning. And the way that arrays are indexed, the latter takes more work
+
+unshift moves every single element over by 1 space (per call) while push() only needs to do that one time. This is why the time complexity for doublerInsert is O(n^2), while doulblerAppend is O(n).
